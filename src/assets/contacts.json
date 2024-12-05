@@ -1,0 +1,212 @@
+[
+    {
+      "firstName": "Rajeev",
+      "lastName": "Sharma",
+      "dob": "1986-02-12",
+      "email": "rajeevsharma@gmail.com",
+      "phone": "2582528582",
+      "address": "1001 NOBLE ST STE 1",
+      "city": "FAIRBANKS",
+      "state": "AK",
+      "zip": "99701"
+    },
+    {
+      "firstName": "Eesha",
+      "lastName": "Sharma",
+      "dob": "1995-07-04",
+      "email": "eeshasharma@gmail.com",
+      "phone": "2582528583",
+      "address": "4821 RIDGE TOP CIR",
+      "city": "ANCHORAGE",
+      "state": "AK",
+      "zip": "99508"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "dob": "1990-10-25",
+      "email": "johndoe@example.com",
+      "phone": "3453453456",
+      "address": "123 MAIN ST",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90001"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "dob": "1992-03-14",
+      "email": "janedoe@example.com",
+      "phone": "3453453457",
+      "address": "456 OAK ST",
+      "city": "SAN FRANCISCO",
+      "state": "CA",
+      "zip": "94102"
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Smith",
+      "dob": "1985-08-20",
+      "email": "mikesmith@example.com",
+      "phone": "1234567890",
+      "address": "789 PINE ST",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zip": "98101"
+    },
+    {
+      "firstName": "Sara",
+      "lastName": "Johnson",
+      "dob": "1988-06-15",
+      "email": "sarajohnson@example.com",
+      "phone": "2345678901",
+      "address": "101 MAPLE ST",
+      "city": "PORTLAND",
+      "state": "OR",
+      "zip": "97201"
+    },
+    {
+      "firstName": "David",
+      "lastName": "Brown",
+      "dob": "1993-11-10",
+      "email": "davidbrown@example.com",
+      "phone": "5675675678",
+      "address": "202 CEDAR ST",
+      "city": "NEW YORK",
+      "state": "NY",
+      "zip": "10001"
+    },
+    {
+      "firstName": "Olivia",
+      "lastName": "Taylor",
+      "dob": "1997-02-18",
+      "email": "oliviataylor@example.com",
+      "phone": "6786786789",
+      "address": "303 FIR ST",
+      "city": "MIAMI",
+      "state": "FL",
+      "zip": "33101"
+    },
+    {
+      "firstName": "Liam",
+      "lastName": "Anderson",
+      "dob": "1989-05-07",
+      "email": "liamanderson@example.com",
+      "phone": "7897897890",
+      "address": "404 BIRCH ST",
+      "city": "DALLAS",
+      "state": "TX",
+      "zip": "75201"
+    },
+    {
+      "firstName": "Emma",
+      "lastName": "Moore",
+      "dob": "1994-01-22",
+      "email": "emmamoore@example.com",
+      "phone": "8908908901",
+      "address": "505 ASH ST",
+      "city": "BOSTON",
+      "state": "MA",
+      "zip": "02101"
+    },
+    {
+      "firstName": "Sophia",
+      "lastName": "Martin",
+      "dob": "1996-09-12",
+      "email": "sophiamartin@example.com",
+      "phone": "9019019012",
+      "address": "606 SPRUCE ST",
+      "city": "CHICAGO",
+      "state": "IL",
+      "zip": "60601"
+    },
+    {
+      "firstName": "Daniel",
+      "lastName": "Garcia",
+      "dob": "1992-04-18",
+      "email": "danielgarcia@example.com",
+      "phone": "0123456789",
+      "address": "707 OAK ST",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "zip": "85001"
+    },
+    {
+      "firstName": "Lucas",
+      "lastName": "Martinez",
+      "dob": "1991-12-05",
+      "email": "lucasmartinez@example.com",
+      "phone": "1234567891",
+      "address": "808 ELM ST",
+      "city": "HOUSTON",
+      "state": "TX",
+      "zip": "77001"
+    },
+    {
+      "firstName": "Amelia",
+      "lastName": "Hernandez",
+      "dob": "1987-07-22",
+      "email": "ameliahernandez@example.com",
+      "phone": "2345678902",
+      "address": "909 POPLAR ST",
+      "city": "DENVER",
+      "state": "CO",
+      "zip": "80201"
+    },
+    {
+      "firstName": "Ethan",
+      "lastName": "King",
+      "dob": "1994-11-30",
+      "email": "ethanking@example.com",
+      "phone": "3456789012",
+      "address": "1011 CHESTNUT ST",
+      "city": "ATLANTA",
+      "state": "GA",
+      "zip": "30301"
+    },
+    {
+      "firstName": "Mia",
+      "lastName": "Lee",
+      "dob": "1998-03-06",
+      "email": "mialee@example.com",
+      "phone": "4567890123",
+      "address": "1212 MAPLE ST",
+      "city": "SAN DIEGO",
+      "state": "CA",
+      "zip": "92101"
+    },
+    {
+      "firstName": "Isabella",
+      "lastName": "Perez",
+      "dob": "1990-02-14",
+      "email": "isabellaperez@example.com",
+      "phone": "5678901234",
+      "address": "1313 LIME ST",
+      "city": "SAN JOSE",
+      "state": "CA",
+      "zip": "95101"
+    },
+    {
+      "firstName": "Charlotte",
+      "lastName": "Evans",
+      "dob": "1986-08-09",
+      "email": "charlottevans@example.com",
+      "phone": "6789012345",
+      "address": "1414 MANGO ST",
+      "city": "AUSTIN",
+      "state": "TX",
+      "zip": "73301"
+    },
+    {
+      "firstName": "James",
+      "lastName": "Thomas",
+      "dob": "1984-09-19",
+      "email": "jamesthomas@example.com",
+      "phone": "7890123456",
+      "address": "1515 TULIP ST",
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "zip": "90002"
+    }
+  ]
+  

@@ -1,0 +1,111 @@
+<div class="search-container">
+  <h1>Contact Search Filter </h1>
+
+  <!-- Search form -->
+  <form [formGroup]="searchForm">
+    <mat-form-field>
+      <input matInput placeholder="First Name" formControlName="firstName">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Last Name" formControlName="lastName">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Date of Birth" formControlName="dob">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Email Address" formControlName="email">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Phone Number" formControlName="phone">
+    </mat-form-field>
+  </form>
+
+  <!-- No Results Message -->
+  <div *ngIf="filteredContacts.length === 0" class="no-results">
+    <p>No contacts found.</p>
+  </div>
+
+  <!-- Results Table -->
+  <table mat-table *ngIf="filteredContacts.length > 0" [dataSource]="paginatedContacts" class="mat-elevation-z8">
+    <!-- Checkbox Column -->
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef>
+        <mat-checkbox 
+          (change)="toggleSelectAll($event.checked)"
+          [checked]="isAllSelected()"
+          [indeterminate]="isSomeSelected()">
+        </mat-checkbox>
+      </th>
+      <td mat-cell *matCellDef="let contact">
+        <mat-checkbox 
+          (change)="toggleRowSelection(contact, $event.checked)"
+          [checked]="isSelected(contact)">
+        </mat-checkbox>
+      </td>
+    </ng-container>
+
+    <!-- Other Columns -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let contact">{{ contact.firstName }} {{ contact.lastName }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="dob">
+      <th mat-header-cell *matHeaderCellDef>Date of Birth</th>
+      <td mat-cell *matCellDef="let contact">{{ contact.dob | date: 'MM/dd/yyyy' }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="address">
+      <th mat-header-cell *matHeaderCellDef>Address</th>
+      <td mat-cell *matCellDef="let contact">{{ contact.address }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="city">
+      <th mat-header-cell *matHeaderCellDef>City</th>
+      <td mat-cell *matCellDef="let contact">{{ contact.city }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="state">
+      <th mat-header-cell *matHeaderCellDef>State</th>
+      <td mat-cell *matCellDef="let contact">{{ contact.state }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="zip">
+      <th mat-header-cell *matHeaderCellDef>Zip Code</th>
+      <td mat-cell *matCellDef="let contact">{{ contact.zip }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef>Email Address</th>
+      <td mat-cell *matCellDef="let contact">{{ contact.email }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="phone">
+      <th mat-header-cell *matHeaderCellDef>Phone Number</th>
+      <td mat-cell *matCellDef="let contact">{{ contact.phone }}</td>
+    </ng-container>
+
+    <!-- Header and Row Definitions -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <!-- Pagination Controls -->
+  <div class="pagination-controls" *ngIf="filteredContacts.length > 0">
+    <button *ngFor="let page of [].constructor(totalPages); let i = index" (click)="onPageChange(i + 1)">
+      {{ i + 1 }}
+    </button>
+  </div>
+
+  <!-- Selected Rows -->
+  <div *ngIf="selectedRows.length > 0">
+    <h2>Selected Contacts</h2>
+    <ul>
+      <li *ngFor="let contact of selectedRows">
+        <strong>Name:</strong> {{ contact.firstName }} {{ contact.lastName }} - 
+        <strong>Email:</strong> {{ contact.email }} - 
+        <strong>Phone:</strong> {{ contact.phone }}
+      </li>
+    </ul>
+  </div>
+</div>
