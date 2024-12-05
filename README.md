@@ -1,31 +1,36 @@
-<<<<<<< HEAD
-# search-filter-angular
-=======
-# ContactSearchApp
+# Contact Search Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+This is a **Contact Search Application** built with Angular and Angular Material. The application allows users to search for contacts, display results in a table format with pagination, and select multiple contacts using checkboxes. It dynamically displays selected contacts and handles cases where no results are found.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. **Search Functionality**:
+   - Search by first name, last name, date of birth, email, and phone number.
+   - Filter results dynamically as you type.
+2. **Results Table**:
+   - Display contact details such as name, date of birth, address, city, state, zip code, email, and phone number.
+   - Includes pagination for large datasets.
+3. **Checkbox Selection**:
+   - Select multiple contacts using checkboxes in each row.
+   - View selected contacts dynamically in a separate section.
+4. **No Results Message**:
+   - Displays a clear "No contacts found" message when no matches are found.
+5. **Responsive Design**:
+   - Optimized for various screen sizes using Angular Material components.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Framework for building the application.
+- **Angular Material**: For UI components like the table, form fields, and checkboxes.
+- **TypeScript**: For type safety and better coding practices.
+- **CSS**: For custom styling.
 
-## Build
+## Setup Instructions
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Follow these steps to set up and run the application locally:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> 0ae0a19 (make some changes)
+### Prerequisites
+1. Install **Node.js** (version 14.x or higher) and npm.
+2. Install the Angular CLI globally:
+   ```bash
+   npm install -g @angular/cli
